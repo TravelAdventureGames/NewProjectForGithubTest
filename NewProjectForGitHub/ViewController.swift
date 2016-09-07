@@ -29,7 +29,13 @@ class ViewController: UIViewController {
     @IBAction func Commit(sender: AnyObject) {
         
         myLabel.text = "Pressed!"
-        counter += 1
+        
+        if counter < 6 {
+            counter += 1
+        } else {
+            counter += 3
+        }
+        
         counterLabel.text = "\(counter)"
         
         
